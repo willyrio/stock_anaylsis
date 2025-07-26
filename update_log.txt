@@ -1,0 +1,16 @@
+# Stock Analysis Trading System - Update Log
+
+## Format
+[YYYY-MM-DD HH:MM] Update: [describe changes]. Status: [success/failed]. Log: [key log messages]. Files: [list]. APIs: [list]. Commit: [hash]
+
+## Updates
+
+[2025-07-26 17:30] Update: Initial setup of stock_analysis.gs, main.gs, and integration with existing stock_analysis_updates.py. Status: success. Log: "Created Stock Picker tab with 20 stocks". Files: stock_analysis.gs, main.gs, project_overview.txt, update_log.txt. APIs: Alpha Vantage, Tastytrade (simulated), Finnhub. Commit: [to be added after first commit]
+
+## Notes
+- Remember to check technical_indicators.log for detailed error messages
+- Always ensure api_credentials.json and client_secret.json are not committed to GitHub
+- Test all three APIs (Alpha Vantage, Tastytrade, Finnhub) with each update
+- The Python backend (stock_analysis_updates.py) must be running for the Google Apps Script to update the sheet
+- To start the Flask server: python -c "from stock_analysis_updates import StockAnalysis; StockAnalysis().run_flask_server()"
+- To update directly without the Flask server: python stock_analysis_updates.py

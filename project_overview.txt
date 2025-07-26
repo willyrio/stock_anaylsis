@@ -1,0 +1,58 @@
+# Stock Analysis Trading System Project Overview
+
+## Current Status
+We are developing a stock analysis trading system that uses Google Apps Script to interface with a Python backend. The system currently consists of:
+
+1. A Google Sheet with a "Stock Picker" tab that displays stock data including:
+   - Basic stock information (Symbol, Price)
+   - Technical indicators (RSI, Stochastic, ADX)
+   - Options data (IV, IV Rank, Delta, Theta)
+   - Trading signals and hedge flags
+
+2. A Google Apps Script (stock_analysis.gs) that:
+   - Creates and formats the "Stock Picker" tab
+   - Connects to a local Python backend API (http://localhost:5000/update_stock_analysis)
+   - Updates the spreadsheet with the latest stock data
+
+## Project Goals
+The goal is to build a comprehensive stock analysis system that:
+1. Provides technical analysis for stock trading decisions
+2. Displays options data for derivatives trading
+3. Generates trading signals based on technical indicators
+4. Identifies potential hedge opportunities
+
+## Development Plan
+1. **Current Phase**: Basic setup and API integration
+   - ✅ Create spreadsheet structure
+   - ✅ Implement basic API connection to Python backend
+   - ⬜ Add comprehensive API testing capabilities
+   - ⬜ Implement data validation
+
+2. **Next Phase**: Enhanced Analysis Features
+   - ⬜ Add more technical indicators
+   - ⬜ Implement custom trading strategies
+   - ⬜ Add historical performance tracking
+   - ⬜ Create visualization dashboards
+
+3. **Future Phase**: Advanced Trading Features
+   - ⬜ Automated trading signals
+   - ⬜ Risk management calculations
+   - ⬜ Portfolio optimization
+   - ⬜ Backtesting capabilities
+
+## API Integration
+The system currently integrates with a Python backend running locally on port 5000. The only endpoint currently used is:
+- http://localhost:5000/update_stock_analysis (POST)
+
+Additional API endpoints will need to be developed and tested as the system grows.
+
+## Development Guidelines
+1. All changes must be thoroughly documented
+2. Before modifying any file, the entire codebase should be reviewed
+3. API tests should be implemented for all endpoints
+4. Changes should be tracked in this overview document
+
+## Last Updated
+2025-07-26
+
+Note: This document will be updated with each significant change to the project to maintain a clear overview of the system's development status and direction.

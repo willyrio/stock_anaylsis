@@ -1,0 +1,21 @@
+# Ignore API credentials and Google Sheets service account key
+api_credentials.json
+client_secret.json
+
+# Ignore Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
+output/
+
+# Ignore Windows-specific files
+Thumbs.db
+desktop.ini
